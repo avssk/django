@@ -1,8 +1,11 @@
-<h2>todo</h2>
- 
+<!DOCTYPE html>
+<html>
+<h2>Todo <a href="http://127.0.0.1:8000/addtask"><button>Add Task </button></a></h2>
+
 {% for x in items %}
-<p>{{ x.name }} - {{ x.created|date:"D d M Y" }}</p>
- 
+<p>{{ x.id }} . {{ x.name }} - {{ x.created|date:"D d M Y" }}</p> 
+
 <p>{{ x.description }}</p>
 <hr />
 {% endfor %}
+</html>

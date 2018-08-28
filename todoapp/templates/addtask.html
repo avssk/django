@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<h2>Add Task </h2>
+</br>
+<form action= "." method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit"> 
+
+</form>
+<a href="http://127.0.0.1:8000"> <button> Cancel </button></a>
+</html>
